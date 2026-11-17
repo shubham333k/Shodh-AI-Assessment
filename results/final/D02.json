@@ -1,0 +1,53 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D02",
+  "reviewer_version": "0.1.0",
+  "status": "PASS",
+  "summary": "All reviewed artifacts agree.",
+  "findings": [],
+  "coverage": {
+    "requirements_total": 4,
+    "requirements_reviewed": 4,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "exhaustive"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "30ce98c6762450388521af568b5dc836b7f665bd4717c67d3ad24287086bb887",
+    "hit": true
+  }
+}

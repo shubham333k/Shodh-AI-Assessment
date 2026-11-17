@@ -1,0 +1,33 @@
+# Local Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Packaging/build metadata
+build/
+dist/
+*.egg-info/
+
+# Local reports and secrets
+report.json
+cache-check.json
+.env
+.env.*
+!.env.example
+
+# Editor/OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local assessment source PDF; not required to run or review the repository
+ShodhAI_MLAssessment.pdf
+
+# Keep these submission artifacts tracked: results/ and checkpoints/ contain
+# the required evaluation outputs and frozen reviewer checkpoint.
+

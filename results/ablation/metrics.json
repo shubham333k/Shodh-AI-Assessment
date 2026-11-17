@@ -1,0 +1,16 @@
+{
+  "name": "sampled_vs_exhaustive",
+  "seed": 7,
+  "samples": 50,
+  "verification": "sampled",
+  "metrics": {
+    "bundles": 17,
+    "decision_correct": 4,
+    "decision_accuracy": 0.23529411764705882,
+    "confusion": {
+      "PASS->INCOMPLETE": 5,
+      "CHANGES_REQUIRED->INCOMPLETE": 8,
+      "INCOMPLETE->INCOMPLETE": 4
+    }
+  }
+}

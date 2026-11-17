@@ -1,0 +1,167 @@
+{
+  "$defs": {
+    "EvidenceLoc": {
+      "properties": {
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "version",
+        "location"
+      ],
+      "title": "EvidenceLoc",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "BLOCKER",
+        "MAJOR",
+        "MINOR",
+        "INFO"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string"
+    },
+    "rule_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rule Ref"
+    },
+    "artifact": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Artifact"
+    },
+    "version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Version"
+    },
+    "location": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Location"
+    },
+    "evidence": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/EvidenceLoc"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "counterexample": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Counterexample"
+    },
+    "correction": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Correction"
+    },
+    "source": {
+      "default": "deterministic",
+      "enum": [
+        "deterministic",
+        "model"
+      ],
+      "title": "Source",
+      "type": "string"
+    },
+    "verification": {
+      "default": "exhaustive",
+      "enum": [
+        "exhaustive",
+        "sampled",
+        "static",
+        "unverified"
+      ],
+      "title": "Verification",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "severity",
+    "category"
+  ],
+  "title": "Finding",
+  "type": "object"
+}

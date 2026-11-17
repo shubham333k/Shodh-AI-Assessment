@@ -1,0 +1,19 @@
+{
+  "D01": {"status": "PASS", "defect_categories": []},
+  "D02": {"status": "PASS", "defect_categories": []},
+  "D03": {"status": "PASS", "defect_categories": []},
+  "D04": {"status": "PASS", "defect_categories": []},
+  "D05": {"status": "CHANGES_REQUIRED", "defect_categories": ["BOUNDARY"]},
+  "D06": {"status": "CHANGES_REQUIRED", "defect_categories": ["UNAPPROVED_CHANGE"]},
+  "D07": {"status": "CHANGES_REQUIRED", "defect_categories": ["PRECEDENCE"]},
+  "D08": {"status": "CHANGES_REQUIRED", "defect_categories": ["UNIT_MISMATCH"]},
+  "D09": {"status": "CHANGES_REQUIRED", "defect_categories": ["OMITTED_REQUIREMENT"]},
+  "D10": {"status": "INCOMPLETE", "defect_categories": ["APPROVAL_CONFLICT"]},
+  "D11": {"status": "INCOMPLETE", "defect_categories": []},
+  "D12": {"status": "INCOMPLETE", "defect_categories": []},
+  "H01": {"status": "CHANGES_REQUIRED", "defect_categories": ["WRONG_BRANCH"]},
+  "H02": {"status": "CHANGES_REQUIRED", "defect_categories": ["CODE_DISAGREEMENT"]},
+  "H03": {"status": "CHANGES_REQUIRED", "defect_categories": ["INTERACTION"]},
+  "H04": {"status": "PASS", "defect_categories": []},
+  "H05": {"status": "INCOMPLETE", "defect_categories": []}
+}

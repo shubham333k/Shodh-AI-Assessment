@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start",
+      "branches": [
+        {
+          "label": "true",
+          "to": "d1"
+        }
+      ]
+    },
+    {
+      "id": "d1",
+      "type": "decision",
+      "condition": {
+        "op": "is_missing",
+        "field": "category"
+      },
+      "branches": [
+        {
+          "label": "true",
+          "to": "t1"
+        },
+        {
+          "label": "false",
+          "to": "d2"
+        }
+      ]
+    },
+    {
+      "id": "t1",
+      "type": "terminal",
+      "route": "manual_review"
+    },
+    {
+      "id": "d2",
+      "type": "decision",
+      "condition": {
+        "op": "eq",
+        "field": "urgent",
+        "value": true
+      },
+      "branches": [
+        {
+          "label": "true",
+          "to": "t2"
+        },
+        {
+          "label": "false",
+          "to": "d3"
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "type": "terminal",
+      "route": "priority_queue"
+    },
+    {
+      "id": "d3",
+      "type": "decision",
+      "condition": {
+        "op": "cmp",
+        "field": "waiting_time",
+        "cmp": ">=",
+        "value": {
+          "n": "25",
+          "unit": "minutes"
+        }
+      },
+      "branches": [
+        {
+          "label": "true",
+          "to": "t3"
+        },
+        {
+          "label": "false",
+          "to": "d4"
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "type": "terminal",
+      "route": "escalation"
+    },
+    {
+      "id": "d4",
+      "type": "decision",
+      "condition": {
+        "op": "and",
+        "args": [
+          {
+            "op": "eq",
+            "field": "customer_tier",
+            "value": "vip"
+          },
+          {
+            "op": "cmp",
+            "field": "waiting_time",
+            "cmp": ">=",
+            "value": {
+              "n": "15",
+              "unit": "minutes"
+            }
+          }
+        ]
+      },
+      "branches": [
+        {
+          "label": "true",
+          "to": "t4"
+        },
+        {
+          "label": "false",
+          "to": "d5"
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "type": "terminal",
+      "route": "escalation"
+    },
+    {
+      "id": "d5",
+      "type": "decision",
+      "condition": {
+        "op": "true"
+      },
+      "branches": [
+        {
+          "label": "true",
+          "to": "t5"
+        },
+        {
+          "label": "false",
+          "to": "t5"
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "type": "terminal",
+      "route": "normal_queue"
+    }
+  ]
+}

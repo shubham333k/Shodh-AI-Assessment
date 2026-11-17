@@ -1,0 +1,57 @@
+{
+  "rules": [
+    {
+      "id": "r1",
+      "order": 1,
+      "implements": [
+        "REQ-1"
+      ],
+      "condition": {
+        "op": "is_missing",
+        "field": "category"
+      },
+      "route": "manual_review"
+    },
+    {
+      "id": "r2",
+      "order": 2,
+      "implements": [
+        "REQ-2"
+      ],
+      "condition": {
+        "op": "eq",
+        "field": "urgent",
+        "value": true
+      },
+      "route": "priority_queue"
+    },
+    {
+      "id": "r3",
+      "order": 3,
+      "implements": [
+        "REQ-3"
+      ],
+      "condition": {
+        "op": "cmp",
+        "field": "waiting_time",
+        "cmp": ">=",
+        "value": {
+          "n": "30",
+          "unit": "minutes"
+        }
+      },
+      "route": "escalation"
+    },
+    {
+      "id": "r4",
+      "order": 99,
+      "implements": [
+        "REQ-4"
+      ],
+      "condition": {
+        "op": "true"
+      },
+      "route": "normal_queue"
+    }
+  ]
+}

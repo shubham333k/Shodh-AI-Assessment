@@ -1,0 +1,53 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D03",
+  "reviewer_version": "0.1.0",
+  "status": "INCOMPLETE",
+  "summary": "The review has unreviewed or ambiguous scope.",
+  "findings": [],
+  "coverage": {
+    "requirements_total": 4,
+    "requirements_reviewed": 4,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "sampled"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "d2fba2d7aae9e6b2e8f428914dc15ed49b27aa3f3125e076ad22e795938bafa7",
+    "hit": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D10",
+  "reviewer_version": "0.1.0",
+  "status": "INCOMPLETE",
+  "summary": "The review has unreviewed or ambiguous scope.",
+  "findings": [],
+  "coverage": {
+    "requirements_total": 4,
+    "requirements_reviewed": 4,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [
+      {
+        "target": "REQ-3",
+        "field": "threshold",
+        "approval_ids": [
+          "AP-1",
+          "AP-2"
+        ],
+        "reason": "same-sequence approved changes disagree"
+      }
+    ],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "exhaustive"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "32941216eec8051be7c8c1683b80a65a8f534a5986310a56ac7599c836ed4970",
+    "hit": true
+  }
+}

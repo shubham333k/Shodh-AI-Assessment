@@ -1,0 +1,105 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D09",
+  "reviewer_version": "0.1.0",
+  "status": "INCOMPLETE",
+  "summary": "The review has unreviewed or ambiguous scope.",
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r4",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "45/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "escalation",
+        "expected_by": "REQ-5",
+        "actual_route": "normal_queue",
+        "actual_by": "r4"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "sampled"
+    },
+    {
+      "id": "F-002",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t4",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "45/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "escalation",
+        "expected_by": "REQ-5",
+        "actual_route": "normal_queue",
+        "actual_by": "t4",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "sampled"
+    }
+  ],
+  "coverage": {
+    "requirements_total": 5,
+    "requirements_reviewed": 5,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "sampled"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "sampled",
+      "details": "1 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "sampled",
+      "details": "1 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "5eb527780cabae718ec128933b02e24fc1c498b353cf10d10e46d61173ccac12",
+    "hit": true
+  }
+}

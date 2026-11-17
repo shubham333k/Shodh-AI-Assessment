@@ -1,0 +1,70 @@
+{
+  "properties": {
+    "requirements_total": {
+      "default": 0,
+      "title": "Requirements Total",
+      "type": "integer"
+    },
+    "requirements_reviewed": {
+      "default": 0,
+      "title": "Requirements Reviewed",
+      "type": "integer"
+    },
+    "unsupported": {
+      "default": [],
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Unsupported",
+      "type": "array"
+    },
+    "ambiguous": {
+      "default": [],
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Ambiguous",
+      "type": "array"
+    },
+    "approval_conflicts": {
+      "default": [],
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Approval Conflicts",
+      "type": "array"
+    },
+    "unreviewed": {
+      "default": [],
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Unreviewed",
+      "type": "array"
+    },
+    "artifacts_reviewed": {
+      "default": [],
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Artifacts Reviewed",
+      "type": "array"
+    },
+    "verification_mode": {
+      "default": "exhaustive",
+      "enum": [
+        "exhaustive",
+        "sampled"
+      ],
+      "title": "Verification Mode",
+      "type": "string"
+    }
+  },
+  "title": "Coverage",
+  "type": "object"
+}

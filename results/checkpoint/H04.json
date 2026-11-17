@@ -1,0 +1,37 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "H04",
+  "reviewer_version": "0.1.0",
+  "status": "PASS",
+  "summary": "All reviewed artifacts agree.",
+  "findings": [],
+  "coverage": {
+    "requirements_total": 5,
+    "requirements_reviewed": 5,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "exhaustive"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "exhaustive",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none"
+  },
+  "resources": {
+    "model_calls": 0
+  },
+  "cache": {
+    "key": "3d4322639faf9f32fab2733387d3e7c09c5cb0df4049eb251d22ce78c4e5cf65",
+    "hit": false
+  }
+}

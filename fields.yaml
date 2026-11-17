@@ -1,0 +1,16 @@
+fields:
+  category:
+    type: enum
+    values: [billing, technical, security, other]
+    aliases: [category]
+  urgent:
+    type: bool
+    aliases: [urgent]
+  waiting_time:
+    type: number
+    unit: minutes
+    aliases: [waiting time, waiting_time]
+  customer_tier:
+    type: enum
+    values: [standard, vip]
+    aliases: [customer tier, customer_tier]

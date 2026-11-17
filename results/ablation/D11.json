@@ -1,0 +1,59 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D11",
+  "reviewer_version": "0.1.0",
+  "status": "INCOMPLETE",
+  "summary": "The review has unreviewed or ambiguous scope.",
+  "findings": [],
+  "coverage": {
+    "requirements_total": 5,
+    "requirements_reviewed": 4,
+    "unsupported": [
+      {
+        "anchor": "REQ-7",
+        "location": "L4",
+        "reason": "unsupported requirement form"
+      }
+    ],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "sampled"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "03f2b3b78639632e126f65ec9d21d0f2eade8c3f5a97a7976c4ff9074f188fe9",
+    "hit": true
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D07",
+  "reviewer_version": "0.1.0",
+  "status": "INCOMPLETE",
+  "summary": "The review has unreviewed or ambiguous scope.",
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r2",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": null,
+          "urgent": true,
+          "waiting_time": null,
+          "customer_tier": "vip"
+        },
+        "expected_route": "manual_review",
+        "expected_by": "REQ-1",
+        "actual_route": "priority_queue",
+        "actual_by": "r2"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "sampled"
+    },
+    {
+      "id": "F-002",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r2",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": null,
+          "urgent": true,
+          "waiting_time": null,
+          "customer_tier": null
+        },
+        "expected_route": "manual_review",
+        "expected_by": "REQ-1",
+        "actual_route": "priority_queue",
+        "actual_by": "r2"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "sampled"
+    },
+    {
+      "id": "F-003",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r2",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": null,
+          "urgent": true,
+          "waiting_time": "30",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "manual_review",
+        "expected_by": "REQ-1",
+        "actual_route": "priority_queue",
+        "actual_by": "r2"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "sampled"
+    },
+    {
+      "id": "F-004",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r2",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": null,
+          "urgent": true,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "manual_review",
+        "expected_by": "REQ-1",
+        "actual_route": "priority_queue",
+        "actual_by": "r2"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "sampled"
+    }
+  ],
+  "coverage": {
+    "requirements_total": 4,
+    "requirements_reviewed": 4,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "sampled"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "sampled",
+      "details": "4 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "passed",
+      "mode": "sampled",
+      "details": "0 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "b9654f1634a2a1a5cec4ad8ec1e85f48d816688183d90dd97dea285d8211d723",
+    "hit": true
+  }
+}

@@ -1,0 +1,5094 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D06",
+  "reviewer_version": "0.1.0",
+  "status": "CHANGES_REQUIRED",
+  "summary": "Deterministic evidence found behavior changes.",
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-002",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-003",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-004",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-005",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-006",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-007",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-008",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-009",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-010",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-011",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-012",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-013",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-014",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-015",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-016",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-017",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-018",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-019",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-020",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-021",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-022",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-023",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-024",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-025",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-026",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-027",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-028",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-029",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-030",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-031",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-032",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-033",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-034",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-035",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-036",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-037",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-038",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-039",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-040",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-041",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-042",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-043",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-044",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-045",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-046",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-047",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-048",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-049",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-050",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-051",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-052",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-053",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-054",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-055",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-056",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-057",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-058",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-059",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-060",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-061",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-062",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-063",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-064",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-065",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-066",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-067",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-068",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-069",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-070",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-071",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-072",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-073",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-074",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-075",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-076",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-077",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-078",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-079",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-080",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r3"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-081",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-082",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-083",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-084",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-085",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-086",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-087",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-088",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-089",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-090",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-091",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-092",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-093",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-094",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-095",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-096",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-097",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-098",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-099",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-100",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-101",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-102",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-103",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-104",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-105",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-106",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-107",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-108",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-109",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-110",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-111",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-112",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-113",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-114",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-115",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-116",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-117",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-118",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-119",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-120",
+      "severity": "BLOCKER",
+      "category": "WRONG_BRANCH",
+      "rule_ref": null,
+      "artifact": "workflow",
+      "version": null,
+      "location": "/nodes/t3",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "t3",
+        "reason": null
+      },
+      "correction": "Repair the workflow branch or terminal route.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-121",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-122",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-123",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-124",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-125",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-126",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-127",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-128",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-129",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-130",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-131",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-132",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-133",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-134",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-135",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-136",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-137",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-138",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-139",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-140",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-141",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-142",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-143",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-144",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-145",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-146",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-147",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-148",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-149",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-150",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-151",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-152",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-153",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-154",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-155",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-156",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-157",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-158",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-159",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-160",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-161",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-162",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-163",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-164",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-165",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-166",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-167",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-168",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-169",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-170",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-171",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-172",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-173",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-174",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-175",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-176",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-177",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-178",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-179",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-180",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-181",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-182",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-183",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-184",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-185",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-186",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-187",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-188",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-189",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-190",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-191",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-192",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-193",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-194",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-195",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-196",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "25",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-197",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": null
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-198",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "standard"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-199",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-200",
+      "severity": "BLOCKER",
+      "category": "CODE_DISAGREEMENT",
+      "rule_ref": null,
+      "artifact": "code",
+      "version": null,
+      "location": "route_v1.py",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "55/2",
+          "customer_tier": "__OTHER__"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "code:6"
+      },
+      "correction": "Align the interpreted snippet with the requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    }
+  ],
+  "coverage": {
+    "requirements_total": 4,
+    "requirements_reviewed": 4,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "exhaustive"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "exhaustive",
+      "details": "80 counterexamples"
+    },
+    {
+      "name": "workflow_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "exhaustive",
+      "details": "40 counterexamples"
+    },
+    {
+      "name": "code_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "exhaustive",
+      "details": "80 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none",
+    "model_findings": []
+  },
+  "resources": {
+    "model_calls": 0,
+    "retries": 0
+  },
+  "cache": {
+    "key": "ef72ac1bfaf6a8eb4414187272f80f3ffc45eefc782a942cccf8d7e1186531ca",
+    "hit": true
+  }
+}

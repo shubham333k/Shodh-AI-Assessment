@@ -1,0 +1,361 @@
+{
+  "$defs": {
+    "Check": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "required": {
+          "default": true,
+          "title": "Required",
+          "type": "boolean"
+        },
+        "outcome": {
+          "enum": [
+            "passed",
+            "failed",
+            "skipped",
+            "error"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "mode": {
+          "default": "exhaustive",
+          "title": "Mode",
+          "type": "string"
+        },
+        "details": {
+          "default": "",
+          "title": "Details",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "outcome"
+      ],
+      "title": "Check",
+      "type": "object"
+    },
+    "Coverage": {
+      "properties": {
+        "requirements_total": {
+          "default": 0,
+          "title": "Requirements Total",
+          "type": "integer"
+        },
+        "requirements_reviewed": {
+          "default": 0,
+          "title": "Requirements Reviewed",
+          "type": "integer"
+        },
+        "unsupported": {
+          "default": [],
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Unsupported",
+          "type": "array"
+        },
+        "ambiguous": {
+          "default": [],
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Ambiguous",
+          "type": "array"
+        },
+        "approval_conflicts": {
+          "default": [],
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Approval Conflicts",
+          "type": "array"
+        },
+        "unreviewed": {
+          "default": [],
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Unreviewed",
+          "type": "array"
+        },
+        "artifacts_reviewed": {
+          "default": [],
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Artifacts Reviewed",
+          "type": "array"
+        },
+        "verification_mode": {
+          "default": "exhaustive",
+          "enum": [
+            "exhaustive",
+            "sampled"
+          ],
+          "title": "Verification Mode",
+          "type": "string"
+        }
+      },
+      "title": "Coverage",
+      "type": "object"
+    },
+    "EvidenceLoc": {
+      "properties": {
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "location": {
+          "title": "Location",
+          "type": "string"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote"
+        }
+      },
+      "required": [
+        "artifact_id",
+        "version",
+        "location"
+      ],
+      "title": "EvidenceLoc",
+      "type": "object"
+    },
+    "Finding": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "BLOCKER",
+            "MAJOR",
+            "MINOR",
+            "INFO"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "rule_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rule Ref"
+        },
+        "artifact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Artifact"
+        },
+        "version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Version"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "evidence": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/EvidenceLoc"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "counterexample": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Counterexample"
+        },
+        "correction": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Correction"
+        },
+        "source": {
+          "default": "deterministic",
+          "enum": [
+            "deterministic",
+            "model"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "verification": {
+          "default": "exhaustive",
+          "enum": [
+            "exhaustive",
+            "sampled",
+            "static",
+            "unverified"
+          ],
+          "title": "Verification",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "severity",
+        "category"
+      ],
+      "title": "Finding",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "report_version": {
+      "default": "1.0",
+      "title": "Report Version",
+      "type": "string"
+    },
+    "bundle_id": {
+      "title": "Bundle Id",
+      "type": "string"
+    },
+    "reviewer_version": {
+      "default": "0.1.0",
+      "title": "Reviewer Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "CHANGES_REQUIRED",
+        "INCOMPLETE"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    },
+    "findings": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "coverage": {
+      "$ref": "#/$defs/Coverage",
+      "default": {
+        "requirements_total": 0,
+        "requirements_reviewed": 0,
+        "unsupported": [],
+        "ambiguous": [],
+        "approval_conflicts": [],
+        "unreviewed": [],
+        "artifacts_reviewed": [],
+        "verification_mode": "exhaustive"
+      }
+    },
+    "checks": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Check"
+      },
+      "title": "Checks",
+      "type": "array"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Provenance",
+      "type": "object"
+    },
+    "resources": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Resources",
+      "type": "object"
+    },
+    "cache": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Cache",
+      "type": "object"
+    }
+  },
+  "required": [
+    "bundle_id",
+    "status",
+    "summary"
+  ],
+  "title": "ReviewReport",
+  "type": "object"
+}

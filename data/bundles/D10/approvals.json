@@ -1,0 +1,28 @@
+[
+  {
+    "id": "AP-1",
+    "target": {
+      "doc": "requirements",
+      "version": "v1",
+      "anchor": "REQ-3",
+      "field": "threshold"
+    },
+    "from": "30",
+    "to": "25",
+    "status": "approved",
+    "seq": 1
+  },
+  {
+    "id": "AP-2",
+    "target": {
+      "doc": "requirements",
+      "version": "v1",
+      "anchor": "REQ-3",
+      "field": "threshold"
+    },
+    "from": "30",
+    "to": "20",
+    "status": "approved",
+    "seq": 1
+  }
+]

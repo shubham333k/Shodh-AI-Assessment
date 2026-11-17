@@ -1,0 +1,288 @@
+{
+  "report_version": "1.0",
+  "bundle_id": "D09",
+  "reviewer_version": "0.1.0",
+  "status": "CHANGES_REQUIRED",
+  "summary": "Deterministic evidence found behavior changes.",
+  "findings": [
+    {
+      "id": "F-001",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-002",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "billing",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-003",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-004",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "technical",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-005",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-006",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "security",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-007",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-008",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "other",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-009",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": null,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    },
+    {
+      "id": "F-010",
+      "severity": "BLOCKER",
+      "category": "BEHAVIOUR_MISMATCH",
+      "rule_ref": null,
+      "artifact": "spec",
+      "version": null,
+      "location": "/rules/r5",
+      "evidence": [],
+      "counterexample": {
+        "ticket": {
+          "category": "__OTHER__",
+          "urgent": false,
+          "waiting_time": "29",
+          "customer_tier": "vip"
+        },
+        "expected_route": "normal_queue",
+        "expected_by": "REQ-4",
+        "actual_route": "escalation",
+        "actual_by": "r5"
+      },
+      "correction": "Make the reviewed artifact agree with the effective requirement.",
+      "source": "deterministic",
+      "verification": "exhaustive"
+    }
+  ],
+  "coverage": {
+    "requirements_total": 5,
+    "requirements_reviewed": 5,
+    "unsupported": [],
+    "ambiguous": [],
+    "approval_conflicts": [],
+    "unreviewed": [],
+    "artifacts_reviewed": [],
+    "verification_mode": "exhaustive"
+  },
+  "checks": [
+    {
+      "name": "spec_equivalence",
+      "required": true,
+      "outcome": "failed",
+      "mode": "exhaustive",
+      "details": "10 counterexamples"
+    }
+  ],
+  "provenance": {
+    "client_kind": "none"
+  },
+  "resources": {
+    "model_calls": 0
+  },
+  "cache": {
+    "key": "9d37c08b23cd312f115cecdd4ef9a4a26a786cf10c779cabbdd83408cd5592ed",
+    "hit": false
+  }
+}
